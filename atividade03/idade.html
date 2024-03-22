@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    
+    /*
+        Peça ao usuário para digitar idades de 10 pessoas. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
+    */
+   
+    let maiores = []
+    let menores = []
+
+    for (i=0; i<10;i+=1) {
+        let idadePrompt = parseInt(prompt("Inisira uma idade"))
+
+        if (idadePrompt >= 18) {
+            maiores.push(idadePrompt)
+        } else {
+            menores.push(idadePrompt)
+        }
+    }
+
+    alert(`Maiores de idade (${maiores.length}): ${maiores}\n Menores de idade (${menores.length}): ${menores}` )
+</script>
+<body>
+    
+</body>
+</html>
