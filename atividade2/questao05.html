@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fibonacciArray(n) {
+        const fibonacci = [0, 1];
+        for (let i = 2; i < n; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        }
+        return fibonacci;
+    }
+
+    let n;
+    do {
+        n = parseInt(prompt("Digite um inteiro positivo para o número de termos de Fibonacci:"));
+    } while (isNaN(n) || n <= 0); // Continuar pedindo enquanto o valor não for um número positivo
+
+
+    alert("Números de Fibonacci: " + fibonacciArray(n).join(", "));
+</script>
+
+<body>
+
+</body>
+
+</html>

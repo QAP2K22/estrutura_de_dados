@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let pilha = [];
+
+    for (let i = 0; i < 10; i++) {
+        const numero = parseInt(prompt(`Digite o número ${i + 1}:`));
+        if (numero % 2 === 0) {
+            pilha.push(numero);
+        } else {
+            if (pilha.length === 0) {
+                console.log("A pilha está vazia, não é possível desempilhar.");
+            } else {
+                pilha.pop();
+            }
+        }
+    }
+
+    while (pilha.length > 0) {
+        console.log(pilha.pop());
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>
